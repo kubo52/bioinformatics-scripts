@@ -1,6 +1,6 @@
 def reverse_complement(sequence: str) -> str:
     """Return the reverse complement of a DNA sequence."""
-    trans_table = str.maketrans("ACGTUacgtu", "TGCAAucaaa")
+    trans_table = str.maketrans("ACGTUacgtu", "TGCAAtgcaa")
     return sequence.translate(trans_table)[::-1]
 
 
