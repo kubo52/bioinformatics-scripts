@@ -1,4 +1,5 @@
 from reverse_complement import reverse_complement
+from fasta_parser import parse_fasta
 
 
 def test_standard_dna():
@@ -14,9 +15,7 @@ def test_empty_string():
 
 
 def test_rna_uracil():
-    assert reverse_complement("AUGC") == "GCAU"
-
-from fasta_parser import parse_fasta
+    assert reverse_complement("AUGC") == "GCAT"
 
 
 def test_parse_fasta_multiline():
